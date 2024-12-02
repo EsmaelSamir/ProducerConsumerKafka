@@ -1,0 +1,17 @@
+Starting Zookeeper
+	zookeeper-server-start.bat ..\..\config\zookeeper.properties
+
+
+Starting kafka
+	kafka-server-start.bat config/server.properties
+	kafka-server-start.bat ..\..\config\server.properties
+
+
+
+
+
+====================================
+ports comand
+---------------------
+netstat -ano | findstr :<PORT>  ==> to know pid of port || netstat -a -n -o | find "123456"
+taskkill /PID <PID> /F                ==> to kill the app use this port
